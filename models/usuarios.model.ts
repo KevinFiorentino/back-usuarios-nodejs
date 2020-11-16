@@ -37,7 +37,6 @@ export function insertOneUser(user: Partial<Usuario>): Promise<Usuario> {
             if (error) reject(error);
             resolve(result[0]);
         });
-
     });
   });
 }

@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { Usuario, findAllUsers, findOneUser, insertOneUser, updateUser, deleteUser } from "../models/usuarios.model";
+import { findAllUsers, findOneUser, insertOneUser, updateUser, deleteUser } from "../models/usuarios.model";
 
 export const getAllUsers = async (req: Request, res: Response) => {
   try {
