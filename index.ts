@@ -12,6 +12,10 @@ app.use(logger('dev'));
 
 app.use('/users', usuariosRouter);
 
+app.use('/kevin', (req, res) => {
+  res.status(200).send({ message: 'Hello kevin!' });
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`⚡️[server]: Server is running at https://localhost:${PORT}`);
