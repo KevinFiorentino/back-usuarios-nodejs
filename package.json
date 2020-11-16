@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "pm2-runtime start ecosystem.config.js",
+    "postinstall": "tsc",
     "build": "tsc --project ./"
   },
   "engines": {
